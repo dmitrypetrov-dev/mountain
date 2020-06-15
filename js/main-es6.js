@@ -67,9 +67,9 @@ const headerMenuLinks = document.querySelectorAll('.header-nav__link');
     if (window.innerWidth <= 990) {
         for (let i = 0; i < headerMenuLinks.length; i += 1) {
             headerMenuLinks[i].addEventListener('click', () => {
-                burgerMenu.classList.remove('active');
-                headerMenu.classList.remove('active');
-                body.classList.remove('lock');
+                burgerMenu.classList.toggle('active');
+                headerMenu.classList.toggle('active');
+                body.classList.toggle('lock');
             });
         }
     }
